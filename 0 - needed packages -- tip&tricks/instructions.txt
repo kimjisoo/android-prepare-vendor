@@ -1,0 +1,45 @@
+1)
+clone https://github.com/alperakcan/fuse-ext2 (needs to be compiled on the system)
+
+To fix compilation issues on opensuse:
+install fuse-devel package that gives libfuse
+
+in the config.ac file add "AM_PROG_CC_C_O"  >>>>> SEEMS NOT NEEDED ON OPENSUSE TUMBLEWEED NOW
+
+then 
+$ ./autogen.sh
+$ ./configure
+$ make
+$ sudo make install
+
+
+it'll be installed in /usr/local/bin/fuse-ext2
+
+---------------------------
+2)
+clone https://github.com/hak86/android-simg2img
+
+then run:
+make
+
+then copy simg2img bin to /usr/local/bin/simg2img
+
+---------------------------
+3)
+at least on opensuse i need to run the whole thing as root otherwise fuse-ext2 can't mount the imgs
+so run "su" then the extractor script with the following template commands 
+(in this case move fuse-ext2 and simg2img  in /bin/ instead of /usr/local/bin/)
+extracted vendor blobs will have root as owner, then u need to take ownership with:
+chown -R USERNAME:users FOLDERNAME
+
+---
+Commands:
+
+put the zip into "vendor" subfolder then:
+
+./execute-all.sh -d angler -i "/home/ezio/Android/android-prepare-vendor/vendor/angler-opm1.171019.011-factory-39448337.zip" --full -y -o /home/ezio/Android/android-prepare-vendor/vendor/extracted/ -b opm1.171019.011 -k --deodex-all
+
+
+unmount to delete out folders
+umount "/home/ezio/Android/android-prepare-vendor/vendor/extracted/angler/opm1.171019.011/factory_imgs_data/system"
+umount "/home/ezio/Android/android-prepare-vendor/vendor/extracted/angler/opm1.171019.011/factory_imgs_data/vendor"
