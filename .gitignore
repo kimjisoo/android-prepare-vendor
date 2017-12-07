@@ -34,3 +34,5 @@ hostTools/Linux/lib*
 hostTools/Darwin/*.zip
 hostTools/Darwin/bin/oatdump
 hostTools/Darwin/lib*
+
+vendor/*
