@@ -583,7 +583,7 @@ gen_mk_for_bytecode() {
 
     # Always resign APKs with platform keys
     if [[ "$fileExt" == "apk" ]]; then
-      cert="platform"
+      cert="PRESIGNED"
       if [ ! -z "${PSIG_BC_FILES-}" ]; then
         if array_contains "$zipName" "${PSIG_BC_FILES[@]}"; then
           cert="PRESIGNED"
