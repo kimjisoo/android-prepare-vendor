@@ -666,7 +666,12 @@
       "overlays-dir": "",
       "system-bytecode": [
         "system/app/SetupSmartDeviceOverlay/SetupSmartDeviceOverlay.apk",
+        "system/app/Tycho/Tycho.apk",
+        "system/framework/com.google.android.camera.experimental2016.jar",
+        "system/priv-app/GCS/GCS.apk",
         "system/priv-app/CallStatistics/CallStatistics.apk",
+        "system/priv-app/CarrierServices/CarrierServices.apk",
+        "system/priv-app/CarrierSetup/CarrierSetup.apk",
         "system/priv-app/ConfigUpdater/ConfigUpdater.apk",
         "system/priv-app/ConnMO/ConnMO.apk",
         "system/priv-app/DCMO/DCMO.apk",
@@ -674,12 +679,20 @@
         "system/priv-app/DiagMon/DiagMon.apk",
         "system/priv-app/Entitlement/Entitlement.apk",
         "system/priv-app/HiddenMenu/HiddenMenu.apk",
-        "system/priv-app/SprintDM/SprintDM.apk"
+        "system/priv-app/HotwordEnrollmentOKGoogleWCD9330/HotwordEnrollmentOKGoogleWCD9330.apk",
+        "system/priv-app/HotwordEnrollmentTGoogleWCD9330/HotwordEnrollmentTGoogleWCD9330.apk",
+        "system/priv-app/HotwordEnrollmentXGoogleWCD9330/HotwordEnrollmentXGoogleWCD9330.apk",
+        "system/priv-app/SprintDM/SprintDM.apk",
+        "system/priv-app/Turbo/Turbo.apk"
       ],
       "system-other": [
+        "system/etc/permissions/com.google.android.camera.experimental2016.xml",
         "system/etc/permissions/com.android.sdm.plugins.connmo.xml",
         "system/etc/permissions/com.android.sdm.plugins.sprintdm.xml",
+        "system/etc/permissions/privapp-permissions-angler.xml",
         "system/etc/permissions/privapp-permissions-google.xml",
+        "system/etc/permissions/privapp-permissions-platform.xml",
+        "system/etc/sysconfig/angler_common.xml",
         "system/etc/sysconfig/google_build.xml",
         "system/etc/sysconfig/google.xml",
         "system/etc/sysconfig/whitelist_com.android.omadm.service.xml"
