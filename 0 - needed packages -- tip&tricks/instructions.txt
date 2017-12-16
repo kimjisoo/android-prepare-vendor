@@ -37,7 +37,8 @@ Commands:
 
 put the zip into "vendor" subfolder then:
 
-./execute-all.sh -d angler -i "/home/ezio/Android/android-prepare-vendor/vendor/angler-opm1.171019.011-factory-39448337.zip" --full -y -o /home/ezio/Android/android-prepare-vendor/vendor/extracted/ -b opm1.171019.011 -k --deodex-all
+./execute-all.sh -d angler -i "/home/ezio/Android/android-prepare-vendor/vendor/angler-opm1.171019.011-factory-39448337.zip" -y -o /home/ezio/Android/android-prepare-vendor/vendor/extracted/ -b opm1.171019.011 -k --full
+
 
 
 unmount to delete out folders
